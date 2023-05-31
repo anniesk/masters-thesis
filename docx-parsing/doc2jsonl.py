@@ -56,7 +56,7 @@ if __name__=="__main__":
     print(len(meta))
     assert len(all_d)==len(meta)
 
-    combined=open("../data/combined-translated2.jsonl","wt") # keep it jsonl instead of turning back to tsv
+    combined=open("../data/combined-translated.jsonl","wt") # keep it jsonl instead of turning back to tsv
     
     # sorting the ids in correct order fixes everything and now this is super fast :)
     # thankfully no ids were missing
