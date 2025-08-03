@@ -1,0 +1,402 @@
+######################
+# Overall Statistics #
+######################
+
+rows:       802385
+file size:  239781490
+labels:     
+    none:                            467980
+    indirect:                        13479
+    offensive:                       66429
+    direct:                          5182
+    hate:                            42667
+    abusive:                         20352
+    disrespectful:                   2575
+    fearful:                         1553
+    obscene:                         736
+    relation:                        168
+    idk/skip:                        73
+    Islamophobia:                    856
+    sexism:                          2759
+    racism:                          103
+    sexist:                          5018
+    hostile:                         2651
+    benevolent:                      2367
+    gender_cunt:                     3577
+    disability_retarded:             1468
+    gender_twat:                     1072
+    disability_retard:               1063
+    sexorient_faggot:                928
+    ethn_nigger:                     382
+    class_redneck:                   163
+    class_whitetrash:                122
+    ethn_whitetrash:                 122
+    prohatespeech:                   103
+    gender_dyke:                     77
+    sexorient_dyke:                  77
+    white:                           72
+    ethnicity:                       81
+    archaic_hillbilly:               46
+    ethn_trailertrash:               25
+    class_conspiracytheorist:        21
+    gender_bint:                     20
+    class_rube:                      18
+    ethn_spic:                       12
+    islamophobia:                    10
+    religious:                       10
+    nation_limey:                    10
+    black:                           9
+    class_trailerparktrash:          5
+    ethn_wetback:                    5
+    ethn_trailerparktrash:           5
+    rel_muzzie:                      4
+    ethn_housenigger:                4
+    archaic_wigger:                  3
+    nation_wigger:                   3
+    archaic_boojie:                  2
+    nation_camelfucker:              1
+    nation_chinaman:                 1
+    ethn_whitenigger:                1
+    ethn_camelfucker:                1
+    nation_whitenigger:              1
+    archaic_chinaman:                1
+    archaic_surrendermonkey:         1
+    rel_camelfucker:                 1
+    nation_surrendermonkey:          1
+    archaic_whitenigger:             1
+    ethn_raghead:                    1
+    targeted:                        4373
+    profane:                         2364
+    untargeted:                      1250
+    normal:                          36100
+    targets_foreigner_refugee:       283
+    moderate:                        291
+    targets_politicians_government:  175
+    targets_other:                   95
+    targets_press:                   63
+    targets_page_community:          34
+    targets_unknown:                 23
+    no_target:                       1
+    other:                           2248
+    insult:                          368
+    HS_Individual:                   3575
+    HS_Weak:                         3383
+    HS_Other:                        3740
+    HS_Moderate:                     1705
+    HS_Group:                        1986
+    HS_Physical:                     323
+    HS_Gender:                       306
+    HS_Religion:                     793
+    HS_Race:                         566
+    HS_Strong:                       473
+    stereotype:                      1449
+    aggressive:                      26923
+    irony:                           593
+    no_offensiveness:                373
+    Lesbians:                        58
+    Men:                             50
+    Fat women:                       32
+    Ugly women:                      31
+    Refugees:                        23
+    Black people:                    24
+    Homofobia:                       11
+    Racism:                          8
+    Gays:                            21
+    Islamists:                       9
+    Black Women:                     5
+    Imigrants:                       6
+    Left wing ideology:              4
+    Feminists:                       4
+    Aborting women:                  3
+    Transsexuals:                    3
+    Jornalists:                      2
+    Angolans:                        2
+    Trans women:                     3
+    Muslims:                         1
+    Rural people:                    1
+    Thin women:                      1
+    Disabled people:                 1
+    Vegetarians:                     1
+    Fat people:                      2
+    Ugly people:                     1
+    Russians:                        1
+    Old people:                      1
+    Homeless:                        1
+    Egyptians:                       1
+    TR:                              1560
+    spam:                            7573
+    hateful:                         1944
+    toxic:                           15362
+    attack:                          13590
+    positive:                        4038
+    negative:                        4038
+    inappropriate:                   25460
+    appropriate:                     2822
+######################
+# Dataset Statistics #
+######################
+
+
+ousidhoum2019en_with_stopwords.csv
+    rows:       5647
+    file size:  679816
+    labels:     
+        offensive:      4020
+        indirect:       5078
+        none:           1359
+        direct:         569
+        hate:           1278
+        disrespectful:  782
+        abusive:        671
+        fearful:        562
+
+ousidhoum2019fr.csv
+    rows:       4014
+    file size:  487027
+    labels:     
+        offensive:      1690
+        direct:         2624
+        abusive:        1056
+        indirect:       1390
+        none:           1124
+        fearful:        388
+        hate:           399
+        disrespectful:  396
+
+
+gibert2018en.csv
+    rows:       10944
+    file size:  1190126
+    labels:     
+        none:      9507
+        hate:      1196
+        relation:  168
+        idk/skip:  73
+
+gao2018en.csv
+    rows:       1528
+    file size:  250319
+    labels:     
+        none:  1093
+        hate:  435
+        856
+
+qian2019en_gab.csv
+    rows:       33776
+    file size:  6098685
+    labels:     
+        hate:  14614
+
+
+jha2017en.csv
+    rows:       5018
+    file size:  767103
+    labels:     
+        sexist:      5018
+        hostile:     2651
+        benevolent:  2367
+
+elSherief2018en.csv
+    rows:       9439
+    file size:  1054776
+    labels:     
+        gender_cunt:               3577
+        disability_retarded:       1468
+        gender_twat:               1072
+        disability_retard:         1063
+        sexorient_faggot:          928
+        ethn_nigger:               382
+        class_redneck:             163
+        class_whitetrash:          122
+        ethn_whitetrash:           122
+        prohatespeech:             103
+        gender_dyke:               77
+        sexorient_dyke:            77
+        white:                     72
+        racism:                    91
+        ethnicity:                 81
+        archaic_hillbilly:         46
+        ethn_trailertrash:         25
+        class_conspiracytheorist:  21
+        gender_bint:               20
+        class_rube:                18
+        ethn_spic:                 12
+        islamophobia:              10
+        religious:                 10
+        nation_limey:              10
+        black:                     9
+        class_trailerparktrash:    5
+        ethn_wetback:              5
+        ethn_trailerparktrash:     5
+        rel_muzzie:                4
+        ethn_housenigger:          4
+        archaic_wigger:            3
+        nation_wigger:             3
+        archaic_boojie:            2
+        nation_camelfucker:        1
+        nation_chinaman:           1
+        ethn_whitenigger:          1
+        ethn_camelfucker:          1
+        nation_whitenigger:        1
+        archaic_chinaman:          1
+        archaic_surrendermonkey:   1
+        rel_camelfucker:           1
+        nation_surrendermonkey:    1
+        archaic_whitenigger:       1
+        ethn_raghead:              1
+
+mandl2019en.csv
+    rows:       7005
+    file size:  1423967
+    labels:     
+        none:        4456
+        targeted:    2286
+        hate:        1267
+        profane:     760
+        offensive:   522
+        untargeted:  263
+
+mandl2019ger.csv
+    rows:       4669
+    file size:  924450
+    labels:     
+        none:       4126
+        offensive:  287
+        hate:       152
+        profane:    104
+
+mandl2019hind.csv
+    rows:       5983
+    file size:  2355672
+    labels:     
+        normal:      2909
+        targeted:    2087
+        profane:     1455
+        hate:        746
+        offensive:   873
+        untargeted:  987
+
+ross2018de.csv
+    rows:       469
+    file size:  67918
+    labels:     
+        none:  315
+        hate:  154
+
+wiegand2018de.csv
+    rows:       3398
+    file size:  524382
+    labels:     
+        other:      2248
+        offensive:  1150
+        abusive:    737
+        insult:     368
+        profane:    45
+
+
+alfina2017id.csv
+    rows:       713
+    file size:  84599
+    labels:     
+        none:  453
+        hate:  260
+
+ibrohim2019id.csv
+    rows:       13169
+    file size:  1991356
+    labels:     
+        abusive:        5043
+        HS_Individual:  3575
+        HS_Weak:        3383
+        hate:           5561
+        HS_Other:       3740
+        HS_Moderate:    1705
+        HS_Group:       1986
+        HS_Physical:    323
+        HS_Gender:      306
+        HS_Religion:    793
+        HS_Race:        566
+        HS_Strong:      473
+
+ibrohim2018id.csv
+    rows:       2016
+    file size:  240024
+    labels:     
+        abusive:    1090
+        offensive:  595
+        none:       331
+
+sanguinetti2018it.csv
+    rows:       5107
+    file size:  750780
+    labels:     
+        stereotype:        1449
+        offensive:         511
+        hate:              815
+        aggressive:        956
+        irony:             593
+        no_offensiveness:  373
+
+fortuna2019pt.csv
+    rows:       1821
+    file size:  223126
+    labels:     
+        none:                1468
+        sexism:              108
+        Lesbians:            58
+        Men:                 50
+        Fat women:           32
+        Ugly women:          31
+        Refugees:            23
+        Black people:        24
+        Homofobia:           11
+        Racism:              8
+        Gays:                21
+        Islamists:           9
+        Black Women:         5
+        Imigrants:           6
+        Left wing ideology:  4
+        Feminists:           4
+        Aborting women:      3
+        Transsexuals:        3
+        Jornalists:          2
+        Angolans:            2
+        Trans women:         3
+        Muslims:             1
+        Rural people:        1
+        Thin women:          1
+        Disabled people:     1
+        Vegetarians:         1
+        Fat people:          2
+        Ugly people:         1
+        Russians:            1
+        Old people:          1
+        Homeless:            1
+        Egyptians:           1
+
+coltekin2019tr.csv
+    rows:       3515
+    file size:  494287
+    labels:     
+        none:       2804
+        offensive:  711
+
+basile2019en.csv
+    rows:       10000
+    file size:  1617303
+    labels:     
+        hate:        4210
+        aggressive:  1763
+        TR:          1560
+
+
+novak2021sl.csv
+    rows:       78534
+    file size:  10534323
+    labels:     
+        none:           49784
+        inappropriate:  25460
+        appropriate:    2822
+        offensive:      468
+
+
