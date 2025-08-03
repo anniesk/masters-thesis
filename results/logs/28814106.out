@@ -1,0 +1,16 @@
+START Sun Jul  6 11:33:27 EEST 2025
+model: twitter_data
+data: all_reannotated.tsv
+Namespace(model='twitter_data', threshold=0.5, data=['all_reannotated.tsv'], tokenizer='TurkuNLP/bert-base-finnish-cased-v1')
+[2025-07-06 11:33:47,823] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+              precision    recall  f1-score   support
+
+   not toxic       0.81      0.48      0.61       299
+       toxic       0.63      0.89      0.74       301
+
+    accuracy                           0.69       600
+   macro avg       0.72      0.69      0.67       600
+weighted avg       0.72      0.69      0.67       600
+
+{'accuracy': 0.6866666666666666, 'weighted_accuracy': 0.685985399837776, 'f1': 0.6726867542597149, 'precision': 0.7235645309933085, 'recall': 0.685985399837776}
+END: Sun Jul  6 11:34:03 EEST 2025

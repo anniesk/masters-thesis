@@ -1,0 +1,16 @@
+START Mon May 26 17:18:44 EEST 2025
+model: no_jigsaw
+data: jigsaw
+Namespace(model='no_jigsaw', threshold=0.5, data=['jigsaw'], tokenizer='TurkuNLP/bert-base-finnish-cased-v1')
+[2025-05-26 17:19:08,866] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+              precision    recall  f1-score   support
+
+   not toxic       0.97      0.88      0.92     57735
+       toxic       0.41      0.76      0.53      6243
+
+    accuracy                           0.87     63978
+   macro avg       0.69      0.82      0.73     63978
+weighted avg       0.92      0.87      0.89     63978
+
+{'accuracy': 0.8684078902122605, 'weighted_accuracy': 0.8221594363915696, 'f1': 0.7274373470225481, 'precision': 0.6895431139267414, 'recall': 0.8221594363915696}
+END: Mon May 26 17:30:14 EEST 2025

@@ -1,0 +1,15 @@
+START Sun Jul  6 10:03:50 EEST 2025
+epochs: 5, learning rate: 1e-5, batch size: 8, model: TurkuNLP/bert-base-finnish-cased-v1 
+Namespace(files=['davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'waseem2016en.csv', 'zampieri2019en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', save_name='twitter_data', jigsaw=True, batch=8, epochs=5, learning=1e-05, loss=False)
+clean: 308631
+toxic: 102646
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 329021
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 82256
+    })
+})

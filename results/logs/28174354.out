@@ -1,0 +1,23 @@
+START 28174354: Tue May 20 15:49:00 EEST 2025
+Namespace(files=['bretschneider2016en_lol.csv', 'bretschneider2016en_wow.csv', 'davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'qian2019en_reddit.csv', 'waseem2016en.csv', 'zampieri2019en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', jigsaw=True, batch=12, epochs=5, learning=1e-05, loss=False)
+clean: 328547
+toxic: 108025
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 349257
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 87315
+    })
+})
+{'loss': 0.2757, 'grad_norm': 14.73675537109375, 'learning_rate': 8.282150833190174e-06, 'epoch': 0.86}
+{'eval_loss': 0.26963678002357483, 'eval_accuracy': 0.8943824085208727, 'eval_weighted_accuracy': 0.8479273204769335, 'eval_f1': 0.8943824085208727, 'eval_precision': 0.8943824085208727, 'eval_recall': 0.8943824085208727, 'eval_runtime': 495.7342, 'eval_samples_per_second': 176.133, 'eval_steps_per_second': 5.505, 'epoch': 0.86}
+{'loss': 0.2332, 'grad_norm': 7.051904201507568, 'learning_rate': 6.564232949665007e-06, 'epoch': 1.72}
+{'eval_loss': 0.3043738007545471, 'eval_accuracy': 0.8971425299204031, 'eval_weighted_accuracy': 0.8527533116511994, 'eval_f1': 0.8971425299204031, 'eval_precision': 0.8971425299204031, 'eval_recall': 0.8971425299204031, 'eval_runtime': 495.5518, 'eval_samples_per_second': 176.198, 'eval_steps_per_second': 5.507, 'epoch': 1.72}
+{'loss': 0.2051, 'grad_norm': 20.253477096557617, 'learning_rate': 4.846315066139839e-06, 'epoch': 2.58}
+{'eval_loss': 0.3538781702518463, 'eval_accuracy': 0.8965927961976751, 'eval_weighted_accuracy': 0.8577649819089059, 'eval_f1': 0.8965927961976751, 'eval_precision': 0.8965927961976751, 'eval_recall': 0.8965927961976751, 'eval_runtime': 495.7434, 'eval_samples_per_second': 176.129, 'eval_steps_per_second': 5.505, 'epoch': 2.58}
+{'loss': 0.1832, 'grad_norm': 5.77617073059082, 'learning_rate': 3.128397182614671e-06, 'epoch': 3.44}
+{'eval_loss': 0.45973923802375793, 'eval_accuracy': 0.8965011739105537, 'eval_weighted_accuracy': 0.8569798192557896, 'eval_f1': 0.8965011739105537, 'eval_precision': 0.8965011739105537, 'eval_recall': 0.8965011739105537, 'eval_runtime': 495.8273, 'eval_samples_per_second': 176.1, 'eval_steps_per_second': 5.504, 'epoch': 3.44}
+{'loss': 0.1608, 'grad_norm': 0.18605169653892517, 'learning_rate': 1.4104792990895035e-06, 'epoch': 4.29}

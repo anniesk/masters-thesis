@@ -1,0 +1,41 @@
+START Sun Jul  6 10:12:00 EEST 2025
+epochs: 5, learning rate: 1e-5, batch size: 8, model: TurkuNLP/bert-base-finnish-cased-v1 
+Namespace(files=['davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'waseem2016en.csv', 'zampieri2019en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', save_name='twitter_data', jigsaw=False, batch=8, epochs=5, learning=1e-05, loss=False)
+clean: 107550
+toxic: 80178
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 150182
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 37546
+    })
+})
+{'loss': 0.4136, 'grad_norm': 20.563079833984375, 'learning_rate': 7.336706972780056e-06, 'epoch': 1.33}
+{'eval_loss': 0.4646111726760864, 'eval_accuracy': 0.8274383423001118, 'eval_weighted_accuracy': 0.8238409193367655, 'eval_f1': 0.8237032855960116, 'eval_precision': 0.823569119677522, 'eval_recall': 0.8238409193367655, 'eval_runtime': 54.7835, 'eval_samples_per_second': 685.352, 'eval_steps_per_second': 21.43, 'epoch': 1.33}
+{'loss': 0.3371, 'grad_norm': 0.7019317746162415, 'learning_rate': 4.673307409577586e-06, 'epoch': 2.66}
+{'eval_loss': 0.5258386135101318, 'eval_accuracy': 0.8320992915357162, 'eval_weighted_accuracy': 0.8260803128536913, 'eval_f1': 0.8275534200838751, 'eval_precision': 0.8294467759907147, 'eval_recall': 0.8260803128536913, 'eval_runtime': 54.8088, 'eval_samples_per_second': 685.036, 'eval_steps_per_second': 21.42, 'epoch': 2.66}
+{'loss': 0.2897, 'grad_norm': 15.342761039733887, 'learning_rate': 2.0099078463751135e-06, 'epoch': 4.0}
+{'eval_loss': 0.6961862444877625, 'eval_accuracy': 0.8301816438502104, 'eval_weighted_accuracy': 0.8261126868810522, 'eval_f1': 0.8263207635456011, 'eval_precision': 0.8265367893532505, 'eval_recall': 0.8261126868810522, 'eval_runtime': 54.8374, 'eval_samples_per_second': 684.679, 'eval_steps_per_second': 21.409, 'epoch': 4.0}
+{'train_runtime': 4628.6441, 'train_samples_per_second': 162.231, 'train_steps_per_second': 20.279, 'train_loss': 0.32577023226508817, 'epoch': 5.0}
+saved
+F1_micro: 0.82336766827632
+[[ 3.2682626  -2.2873087 ]
+ [-2.3289032   2.799781  ]
+ [ 2.4482567  -1.7187456 ]
+ ...
+ [ 3.486137   -2.772128  ]
+ [-2.6322954   3.066177  ]
+ [ 0.7290817  -0.31340078]]
+              precision    recall  f1-score   support
+
+   not toxic       0.85      0.85      0.85     21532
+       toxic       0.80      0.79      0.80     16014
+
+    accuracy                           0.83     37546
+   macro avg       0.82      0.82      0.82     37546
+weighted avg       0.83      0.83      0.83     37546
+
+END: Sun Jul  6 11:32:18 EEST 2025

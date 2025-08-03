@@ -1,0 +1,18 @@
+START Wed May 21 12:49:37 EEST 2025
+epochs: 5, learning rate: 1e-5, batch size: 8, model: TurkuNLP/bert-base-finnish-cased-v1 
+Namespace(files=['bretschneider2016en_lol.csv', 'bretschneider2016en_wow.csv', 'davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'qian2019en_reddit.csv', 'waseem2016en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', save_name='no_zampieri', jigsaw=True, batch=8, epochs=5, learning=1e-05, loss=False)
+clean: 319707
+toxic: 103625
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 338665
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 84667
+    })
+})
+{'loss': 0.3012, 'grad_norm': 10.774025917053223, 'learning_rate': 8.818963480890066e-06, 'epoch': 0.59}
+{'eval_loss': 0.29313012957572937, 'eval_accuracy': 0.8907366506431077, 'eval_weighted_accuracy': 0.8512239809690504, 'eval_f1': 0.8517365886969428, 'eval_precision': 0.8522532565384127, 'eval_recall': 0.8512239809690504, 'eval_runtime': 485.1361, 'eval_samples_per_second': 174.522, 'eval_steps_per_second': 5.454, 'epoch': 0.59}
+END: Wed May 21 13:44:20 EEST 2025

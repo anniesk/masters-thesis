@@ -1,0 +1,5 @@
+START Sat Jul  5 10:37:14 EEST 2025
+model: all
+data: all_reannotated.tsv
+Namespace(model='all', threshold=0.5, data=['all_reannotated.tsv'], tokenizer='TurkuNLP/bert-base-finnish-cased-v1')
+[2025-07-05 10:37:23,410] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)

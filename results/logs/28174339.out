@@ -1,0 +1,54 @@
+START 28174339: Tue May 20 15:48:11 EEST 2025
+Namespace(files=['bretschneider2016en_lol.csv', 'bretschneider2016en_wow.csv', 'davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'qian2019en_reddit.csv', 'waseem2016en.csv', 'zampieri2019en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', jigsaw=True, batch=4, epochs=5, learning=2e-05, loss=False)
+clean: 328547
+toxic: 108025
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 349257
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 87315
+    })
+})
+{'loss': 0.4783, 'grad_norm': 0.40998080372810364, 'learning_rate': 1.8854767222126785e-05, 'epoch': 0.29}
+{'eval_loss': 0.4880494773387909, 'eval_accuracy': 0.8611006127240451, 'eval_weighted_accuracy': 0.7693806262292062, 'eval_f1': 0.8611006127240451, 'eval_precision': 0.8611006127240451, 'eval_recall': 0.8611006127240451, 'eval_runtime': 496.1247, 'eval_samples_per_second': 175.994, 'eval_steps_per_second': 5.501, 'epoch': 0.29}
+{'loss': 0.5326, 'grad_norm': 0.6757518649101257, 'learning_rate': 1.7709488633110007e-05, 'epoch': 0.57}
+{'eval_loss': 0.5607464909553528, 'eval_accuracy': 0.8439786978182443, 'eval_weighted_accuracy': 0.761941898628899, 'eval_f1': 0.8439786978182443, 'eval_precision': 0.8439786978182443, 'eval_recall': 0.8439786978182443, 'eval_runtime': 493.7033, 'eval_samples_per_second': 176.857, 'eval_steps_per_second': 5.528, 'epoch': 0.57}
+{'loss': 0.5453, 'grad_norm': 14.773303031921387, 'learning_rate': 1.656421004409323e-05, 'epoch': 0.86}
+{'eval_loss': 0.5593142509460449, 'eval_accuracy': 0.8521101758002634, 'eval_weighted_accuracy': 0.752705509390032, 'eval_f1': 0.8521101758002634, 'eval_precision': 0.8521101758002634, 'eval_recall': 0.8521101758002634, 'eval_runtime': 492.5267, 'eval_samples_per_second': 177.28, 'eval_steps_per_second': 5.541, 'epoch': 0.86}
+{'loss': 0.5491, 'grad_norm': 7.432005882263184, 'learning_rate': 1.5418931455076447e-05, 'epoch': 1.15}
+{'eval_loss': 0.556943953037262, 'eval_accuracy': 0.7550134570234209, 'eval_weighted_accuracy': 0.5, 'eval_f1': 0.7550134570234209, 'eval_precision': 0.7550134570234209, 'eval_recall': 0.7550134570234209, 'eval_runtime': 491.886, 'eval_samples_per_second': 177.511, 'eval_steps_per_second': 5.548, 'epoch': 1.15}
+{'loss': 0.5657, 'grad_norm': 2.351437568664551, 'learning_rate': 1.4273652866059671e-05, 'epoch': 1.43}
+{'eval_loss': 0.5567710995674133, 'eval_accuracy': 0.7550134570234209, 'eval_weighted_accuracy': 0.5, 'eval_f1': 0.7550134570234209, 'eval_precision': 0.7550134570234209, 'eval_recall': 0.7550134570234209, 'eval_runtime': 491.9438, 'eval_samples_per_second': 177.49, 'eval_steps_per_second': 5.547, 'epoch': 1.43}
+{'loss': 0.5608, 'grad_norm': 2.47656512260437, 'learning_rate': 1.3128374277042893e-05, 'epoch': 1.72}
+{'eval_loss': 0.558748185634613, 'eval_accuracy': 0.7550134570234209, 'eval_weighted_accuracy': 0.5, 'eval_f1': 0.7550134570234209, 'eval_precision': 0.7550134570234209, 'eval_recall': 0.7550134570234209, 'eval_runtime': 491.8036, 'eval_samples_per_second': 177.54, 'eval_steps_per_second': 5.549, 'epoch': 1.72}
+{'train_runtime': 10682.7721, 'train_samples_per_second': 163.467, 'train_steps_per_second': 40.867, 'train_loss': 0.5386246809895834, 'epoch': 1.72}
+PARAMETERS	model	TurkuNLP/bert-base-finnish-cased-v1	train_batch_size	4	datasets	bretschneider2016en_lol.csv bretschneider2016en_wow.csv davidson2017en.csv founta2018en.csv novak2021sl.csv ousidhoum2019fr.csv ousidhoum2019en_with_stopwords.csv qian2019en_reddit.csv waseem2016en.csv zampieri2019en.csv	learning_rate	2e-5	num_train_epochs	5	Job ID: 28174339
+Cluster: puhti
+User/Group: annieske/annieske
+State: RUNNING
+Cores: 1
+CPU Utilized: 02:59:56
+CPU Efficiency: 98.47% of 03:02:44 core-walltime
+Job Wall-clock time: 03:02:44
+Memory Utilized: 2.31 GB
+Memory Efficiency: 29.61% of 7.81 GB
+Job consumed 188.16 CSC billing units based on following used resources
+Billed project: project_2005092
+CPU BU: 3.05
+Mem BU: 2.38
+GPU BU: 182.73
+GPU job efficiency:
+------------------------------------------------------------------------
+GPU load
+      Hostname        GPU Id      Mean (%)    stdDev (%)       Max (%)
+        r18g01             0         89.86         13.53        100.00
+------------------------------------------------------------------------
+GPU memory
+      Hostname        GPU Id    Mean (GiB)  stdDev (GiB)     Max (GiB)
+        r18g01             0          4.05          0.51          4.16
+------------------------------------------------------------------------
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
+END 28174339: Tue May 20 18:50:57 EEST 2025

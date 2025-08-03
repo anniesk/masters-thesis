@@ -1,0 +1,22 @@
+START Wed May 21 11:38:42 EEST 2025
+epochs: 5, learning rate: 1e-5, batch size: 8, model: TurkuNLP/bert-base-finnish-cased-v1 
+Namespace(files=['bretschneider2016en_lol.csv', 'davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'qian2019en_reddit.csv', 'waseem2016en.csv', 'zampieri2019en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', save_name='no_wow', jigsaw=True, batch=8, epochs=5, learning=1e-05, loss=False)
+clean: 327432
+toxic: 107985
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 348333
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 87084
+    })
+})
+{'loss': 0.3102, 'grad_norm': 17.084272384643555, 'learning_rate': 8.851729364751276e-06, 'epoch': 0.57}
+{'eval_loss': 0.2883487641811371, 'eval_accuracy': 0.8898305084745762, 'eval_weighted_accuracy': 0.8462588985362913, 'eval_f1': 0.8498513667013075, 'eval_precision': 0.8536526009728509, 'eval_recall': 0.8462588985362913, 'eval_runtime': 514.2416, 'eval_samples_per_second': 169.345, 'eval_steps_per_second': 5.293, 'epoch': 0.57}
+{'loss': 0.2857, 'grad_norm': 44.509944915771484, 'learning_rate': 7.703412796839832e-06, 'epoch': 1.15}
+{'eval_loss': 0.3214426338672638, 'eval_accuracy': 0.8959395526158651, 'eval_weighted_accuracy': 0.8603578381610257, 'eval_f1': 0.8598475176060619, 'eval_precision': 0.8593411072659414, 'eval_recall': 0.8603578381610257, 'eval_runtime': 513.4592, 'eval_samples_per_second': 169.603, 'eval_steps_per_second': 5.301, 'epoch': 1.15}
+{'loss': 0.269, 'grad_norm': 24.549453735351562, 'learning_rate': 6.555096228928392e-06, 'epoch': 1.72}
+{'eval_loss': 0.3199682831764221, 'eval_accuracy': 0.8949175508704239, 'eval_weighted_accuracy': 0.8675716300030026, 'eval_f1': 0.8608250324916175, 'eval_precision': 0.8547263479654308, 'eval_recall': 0.8675716300030026, 'eval_runtime': 513.5861, 'eval_samples_per_second': 169.561, 'eval_steps_per_second': 5.3, 'epoch': 1.72}
+END: Wed May 21 14:17:54 EEST 2025

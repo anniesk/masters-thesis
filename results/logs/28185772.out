@@ -1,0 +1,22 @@
+START Wed May 21 11:14:32 EEST 2025
+epochs: 5, learning rate: 1e-5, batch size: 8, model: TurkuNLP/bert-base-finnish-cased-v1 
+Namespace(files=['bretschneider2016en_lol.csv', 'bretschneider2016en_wow.csv', 'davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'qian2019en_reddit.csv', 'waseem2016en.csv', 'zampieri2019en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', save_name='all', jigsaw=True, batch=8, epochs=5, learning=1e-05, loss=False)
+clean: 328547
+toxic: 108025
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 349257
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 87315
+    })
+})
+{'loss': 0.308, 'grad_norm': 4.813192367553711, 'learning_rate': 8.854780338082368e-06, 'epoch': 0.57}
+{'eval_loss': 0.309647798538208, 'eval_accuracy': 0.8903281223157533, 'eval_weighted_accuracy': 0.8454617448591236, 'eval_f1': 0.8507318225736273, 'eval_precision': 0.8564637403966062, 'eval_recall': 0.8454617448591236, 'eval_runtime': 507.1303, 'eval_samples_per_second': 172.175, 'eval_steps_per_second': 5.381, 'epoch': 0.57}
+{'loss': 0.2835, 'grad_norm': 19.026046752929688, 'learning_rate': 7.709514865545834e-06, 'epoch': 1.15}
+{'eval_loss': 0.33847856521606445, 'eval_accuracy': 0.8927675657103591, 'eval_weighted_accuracy': 0.8508117592358782, 'eval_f1': 0.8546778173115661, 'eval_precision': 0.858785366324504, 'eval_recall': 0.8508117592358782, 'eval_runtime': 507.0672, 'eval_samples_per_second': 172.196, 'eval_steps_per_second': 5.382, 'epoch': 1.15}
+{'loss': 0.2674, 'grad_norm': 0.8904505372047424, 'learning_rate': 6.5642493930093e-06, 'epoch': 1.72}
+{'eval_loss': 0.30556315183639526, 'eval_accuracy': 0.8920918513428392, 'eval_weighted_accuracy': 0.8651348197821611, 'eval_f1': 0.8581044639205708, 'eval_precision': 0.8517939292523256, 'eval_recall': 0.8651348197821611, 'eval_runtime': 507.1899, 'eval_samples_per_second': 172.154, 'eval_steps_per_second': 5.381, 'epoch': 1.72}
+END: Wed May 21 13:53:33 EEST 2025

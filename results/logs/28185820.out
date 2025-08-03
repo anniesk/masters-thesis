@@ -1,0 +1,20 @@
+START Wed May 21 11:55:41 EEST 2025
+epochs: 5, learning rate: 1e-5, batch size: 8, model: TurkuNLP/bert-base-finnish-cased-v1 
+Namespace(files=['bretschneider2016en_lol.csv', 'bretschneider2016en_wow.csv', 'davidson2017en.csv', 'founta2018en.csv', 'novak2021sl.csv', 'ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv', 'waseem2016en.csv', 'zampieri2019en.csv'], model='TurkuNLP/bert-base-finnish-cased-v1', save_name='no_qian', jigsaw=True, batch=8, epochs=5, learning=1e-05, loss=False)
+clean: 311485
+toxic: 102770
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 331404
+    })
+    dev: Dataset({
+        features: ['text', 'labels', '__index_level_0__'],
+        num_rows: 82851
+    })
+})
+{'loss': 0.3045, 'grad_norm': 2.2442996501922607, 'learning_rate': 8.793076811664173e-06, 'epoch': 0.6}
+{'eval_loss': 0.28396695852279663, 'eval_accuracy': 0.8932541550494261, 'eval_weighted_accuracy': 0.8523584697536937, 'eval_f1': 0.8561711550710978, 'eval_precision': 0.8602205820618931, 'eval_recall': 0.8523584697536937, 'eval_runtime': 477.766, 'eval_samples_per_second': 173.413, 'eval_steps_per_second': 5.421, 'epoch': 0.6}
+{'loss': 0.2779, 'grad_norm': 0.19951744377613068, 'learning_rate': 7.586105344469658e-06, 'epoch': 1.21}
+{'eval_loss': 0.30798035860061646, 'eval_accuracy': 0.8951491231246455, 'eval_weighted_accuracy': 0.8691848497160932, 'eval_f1': 0.8626739031051943, 'eval_precision': 0.8567813141693796, 'eval_recall': 0.8691848497160932, 'eval_runtime': 477.2133, 'eval_samples_per_second': 173.614, 'eval_steps_per_second': 5.427, 'epoch': 1.21}
+END: Wed May 21 13:39:42 EEST 2025

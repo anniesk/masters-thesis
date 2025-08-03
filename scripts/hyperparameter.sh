@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# from Devlin et al. 2018 (https://arxiv.org/pdf/1810.04805.pdf), Sec. A.3
+# """
+# [...] we found the following range of possible values to work well across all tasks:
+# * Batch size: 16, 32
+# * Learning rate (Adam): 5e-5, 3e-5, 2e-5
+# * Number of epochs: 2, 3, 4
+# """
+
+# implemented from script from https://github.com/spyysalo/transformer-ner/blob/main/scripts/slurm-run-parameter-grid.sh
+
+DIR="$( pwd )"
+JOBDIR="$DIR/jobs"
+
+MAX_JOBS=100
+
+mkdir -p "$JOBDIR"
+
+# switch model here
+#  'bert-large-cased' #"TurkuNLP/bert-base-finnish-cased-v1" #"TurkuNLP/bert-large-finnish-cased-v1" #'bert-base-cased' # 'bert-large-cased' # "xlm-roberta-large" #'xlm-roberta-base'
+MODELS="TurkuNLP/bert-base-finnish-cased-v1"
+
+SEQ_LENS="512" #ignore
+
+BATCH_SIZES="4 8 12"
+#BATCH_SIZES="2 4 8 16" # which batch sizes should I take? less of these?  only 8?
+# w/SEQ_LEN 128: BATCH_SIZES="4 8 16 24"
+
+#LEARNING_RATES="2e-5"
+LEARNING_RATES="5e-5 3e-5 2e-5 1e-5" #"5e-5 3e-5 2e-5 1e-5" # only these? seems okay
+
+EPOCHS="5" 
+#EPOCHS="2 3 4"
+
+#REPETITIONS=5
+REPETITIONS=3 # ignore
+
+# for repetition in `seq $REPETITIONS`; do
+#     for seq_len in $SEQ_LENS; do
+for BATCH in $BATCH_SIZES; do
+    for LR in $LEARNING_RATES; do
+        for EPOCHS in $EPOCHS; do
+            for MODEL in $MODELS; do
+                while true; do
+                jobs=$(ls "$JOBDIR" | wc -l)
+                if [ $jobs -lt $MAX_JOBS ]; then break; fi
+                echo "Too many jobs ($jobs), sleeping ..."
+                sleep 60
+                done
+                echo "Submitting job with params $MODEL $BATCH $LR $EPOCHS" #$seq_len
+                job_id=$(
+                sbatch "loop.sh" \
+                    $MODEL \
+                    $BATCH \
+                    $LR \
+                    $EPOCHS \
+                    | perl -pe 's/Submitted batch job //'
+                )
+                echo "Submitted batch job $job_id"
+                touch "$JOBDIR"/$job_id
+                sleep 5
+            done
+        done
+    done
+done
+#     done
+# done

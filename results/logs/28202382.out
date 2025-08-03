@@ -1,0 +1,6 @@
+START Thu May 22 13:26:51 EEST 2025
+model: no_jigsaw
+data: jigsaw
+Namespace(model='no_jigsaw', threshold=0.5, data=['jigsaw'], tokenizer='TurkuNLP/bert-base-finnish-cased-v1')
+[2025-05-22 13:27:19,507] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+END: Thu May 22 13:27:34 EEST 2025

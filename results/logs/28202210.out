@@ -1,0 +1,16 @@
+START Thu May 22 12:46:46 EEST 2025
+model: no_ousidhoum
+data: ousidhoum2019fr.csv ousidhoum2019en_with_stopwords.csv
+Namespace(model='no_ousidhoum', threshold=0.5, data=['ousidhoum2019fr.csv', 'ousidhoum2019en_with_stopwords.csv'], tokenizer='TurkuNLP/bert-base-finnish-cased-v1')
+[2025-05-22 12:46:55,656] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+              precision    recall  f1-score   support
+
+   not toxic       0.19      0.52      0.28      1357
+       toxic       0.89      0.63      0.74      8304
+
+    accuracy                           0.61      9661
+   macro avg       0.54      0.58      0.51      9661
+weighted avg       0.79      0.61      0.67      9661
+
+{'accuracy': 0.614739674981886, 'weighted_accuracy': 0.5764547507891005, 'f1': 0.5068373838830528, 'precision': 0.5387368225583233, 'recall': 0.5764547507891005}
+END: Thu May 22 12:48:41 EEST 2025
