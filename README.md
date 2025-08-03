@@ -1,7 +1,7 @@
-# Master's thesis
+# Master's thesis repository
 
-using data gained from [Data Integration for Toxic Comment Classification: Making More Than 40 Datasets Easily Accessible in One Unified Format](https://aclanthology.org/2021.woah-1.17) (Risch et al., WOAH 2021)
+This repository includes everything used in the making of my thesis "Machine Translation and Toxicity Detection in Finnish: A FinBERT Approach".
 
-TODO: mapping the labels properly (now used the instruction for binarization from the paper). Have to figure out how would be best to do "ousidhoum2019en" which had multiple labels and confusing labeling with both "none" and other labels.
+The data used is in directory "data" and includes the translated datasets as well as the new annotated dataset. 
 
-Then I need to get wulzcyn data with new labels, that data is already translated to Finnish at https://github.com/TurkuNLP/wikipedia-toxicity-data-fi with multi-label but the ones with toxic-comment-classification had different labelings (same texts three times but with toxic, aggressive and attack).
+The best model is available in [HuggingFace](https://huggingface.co/annieske/bert-base-finnish-cased-toxicity).
